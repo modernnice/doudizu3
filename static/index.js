@@ -412,15 +412,15 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
         }
 
         if (mode === MODE_ENDLESS) {
-            if (score <= 5) return '人间至屑';
-            if (score <= 8) return '斯国一(迫真)';
-            if (score <= 10)  return 'sodayo';
-            return '压力马斯内';
+            if (score <= 5) return '抢救新手';
+            if (score <= 8) return '抢救新兵';
+            if (score <= 10)  return '抢救能手';
+            return '不错哦';
         } else {
-            if (score <= 49) return '人间至屑';
-            if (score <= 99) return '斯国一(迫真)';
-            if (score <= 149) return 'sodayo';
-            return '压力马斯内';
+            if (score <= 49) return '抢救大师';
+            if (score <= 99) return '抢救之王';
+            if (score <= 149) return '神';
+            return '给跪了';
         }
     }
 
@@ -458,7 +458,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
     function initSetting() {
         document.getElementById("username").value = cookie("username") ? cookie("username") : "";
         document.getElementById("message").value = cookie("message") ? cookie("message") : "";
-        document.getElementsByTagName("title")[0].innerText = cookie("title") ? cookie("title") : "撅 仙 贝 罢";
+        document.getElementsByTagName("title")[0].innerText = cookie("title") ? cookie("title") : "抢救着火的艺术品";
         if (cookie("keyboard")) {
             document.getElementById("keyboard").value = cookie("keyboard");
             map = {}
